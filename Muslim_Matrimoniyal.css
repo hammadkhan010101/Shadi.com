@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.sec1 .fluid-container{
+    background-color: #76C7C0;
+    height: 10vh;
+
+}
+.sec1 .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sec1 .container img{
+    width: 240px;
+}
+.navbar--links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar--links div{
+padding: 23px 5px;
+transition: 0.5s ease;
+}
+
+.navbar--links a{
+    text-decoration: none;
+    color: rgb(90, 88, 88);
+    font-weight: 500;
+    font-size: 13px;
+transition: 0.5s ease;
+
+}
+
+.navbar--links div:hover{
+    background-color: #3a5d5a;
+    border-bottom: solid 3px red;
+}
+.navbar--links div:hover a{
+    color: white;
+}
+.Login{
+    background-color: #4e7d79;
+    padding: 5px;
+    margin: 0 5px;
+}
+.Login a{
+    color: white;
+}
+.sec2 .fluid-container{
+    background-image:url('../../Bootstrap/images/muslim-banner.jpg');
+    background-repeat: no-repeat;
+    height: 70vh;
+    background-size: cover;
+}
+.sec2 .container form{
+    background-color: black;
+    width: 35%;
+    border-radius: 5px;
+   
+}
+.sec2 .container form input{
+    outline: solid 1px  rgb(0, 0, 0);    
+    padding: 5px;
+}
+.sec2 .container form h4{
+    text-align: left;
+    padding: 5px;
+    color: white;
+    font-size: 17px;
+}
+.sec2 .container{
+    display: flex;
+    justify-content: right;
+}
+.Birthinput{
+    display: flex;
+    border: solid 1px white;
+    width: 57%;
+    background-color: white;
+}
+.Form{
+    margin: 20px;
+    color: white;
+}
+.Day--Dropdown{
+    overflow-y: auto;
+    height: 40vh;
+}
+.RigBtn{
+    padding: 10px;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    text-shadow: 0px 0px 5px 5px black;
+    background-color: rgb(61, 141, 114);
+    border-radius: 10px;
+}
+.InputSet{
+    display: flex;
+    justify-content: left;
+
+}
+.InputSet input{
+    width: 40%;
+}
+.Links--Previous{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    align-items: center;
+
+}
+.Links--Previous .links{
+    display: flex;
+    justify-content: left;
+    margin: 20px;
+}
+.Links--Previous span{
+text-decoration: none;
+color: red;
+font-size: 18px;
+font-weight: 700;
+
+}
+.links{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.links a,p{
+    text-decoration: none;
+    font-size: 13px;
+    }
+    .links p{
+        margin-top: 10px;
+    }
+.links div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links i{
+    margin: 5px 5px;
+}
+.SecondSec{
+    display: flex;
+    justify-content: left;
+    border-bottom: solid 1px gray ;
+}
+.SecondSec h1{
+    font-weight: 700;
+    color: #666666;
+    font-size: 35px;
+}
+.BtnsOfSecondSec{
+    display: flex;
+}
+.BtnsOfSecondSec div{
+    border: solid 1px black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.BtnsOfSecondSec a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    transition: 0.5s ease;
+   
+}
+.BtnsOfSecondSec a:hover{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    color: rgb(135, 12, 12);
+}
+@media  (max-width: 992px) {
+    .sec2 .container form{
+        width: 90%;
+        margin-top: 20px;
+        height: 80vh;
+    }
+    .Login{
+        display: none;
+    }
+    .navbar--links{
+        display: none;
+
+    }
+    .logo{
+        width: 100%;
+    }
+    .sec2 .fluid-container{
+        height: 90vh;
+    }
+    
+}

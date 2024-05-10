@@ -1,0 +1,412 @@
+* {
+    margin: 0%;
+    padding: 0%;
+
+}
+
+.mamla {
+    display: none;
+}
+
+.ahreftags a {
+    text-decoration: none;
+
+}
+
+.card {
+    margin: 20px;
+    padding: 10px;
+    height: 150px;
+    width: 350px !important;
+
+}
+
+.readmore {
+    width: 200px ! important;
+    color: #337ab7;
+    background-color: #76c7c0;
+    transition: 0.5s ease;
+    text-shadow: black 15px, 15px;
+
+}
+
+.panel {
+    background-image: url(../../Bootstrap/images/mainimg_shadi.com);
+    background-size: cover;
+}
+
+.card:hover .readmore {
+    background-color: rgb(136, 163, 155);
+    color: 337ab7;
+
+}
+
+.cursel a:hover {
+    color: red;
+}
+
+.href {
+    color: black;
+}
+
+.section2 img {
+    width: 300px;
+}
+
+.section2 p {
+    font-size: 15px;
+}
+
+.sec2partitiondiv {
+    width: 25%;
+}
+
+.sec2partitiondiv2 {
+    width: 25%;
+}
+
+.sec2partitiondiv3 {
+    width: 25%;
+}
+
+.section4 {
+
+    background-image: url(../../Bootstrap/images/sec3shadi.com);
+    background-size: cover;
+    height: 100vh;
+}
+
+.section4 h3 {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.sec4part {
+    border-radius: 10%;
+    border: solid 5px #76c7c0;
+    background-color: white;
+    width: 40%;
+}
+
+.section4 .imgbck {
+    width: 100%;
+    height: 200px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.section4 img {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    width: 100%;
+}
+
+.sec4partbtn .button {
+    background-color: white;
+    color: black;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.para {
+    position: absolute;
+    top: 240%;
+    right: 340px;
+}
+
+.para p {
+    font-size: 15px;
+}
+
+.para2 {
+    position: absolute;
+    top: 240%;
+    right: 55%;
+
+}
+
+.para2 p {
+    font-size: 15px;
+
+}
+
+.section5 .sec5partion {
+    width: 25%;
+    height: 100px;
+}
+
+.section5 img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.section5 .imagediv {
+    border: solid 1px #337ab7;
+    width: 100%;
+
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.imagediv:hover {
+    border: solid 1px red;
+    width: 100%;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.sec5partion a {
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.part2para p {
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+    position: absolute;
+    top: 335%;
+    right: 40%;
+}
+
+a:hover {
+    color: red;
+}
+
+.containerpara {
+    position: relative;
+    top: 70px;
+}
+
+.lastdivhref a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #666666;
+    transition: 0.5s ease;
+
+}
+
+.lastdivhref a:hover {
+    text-decoration: none;
+    font-size: 13px;
+    color: #be0505;
+    transition: 0.5s ease;
+
+}
+
+.seconddiv {
+    width: 35%;
+}
+
+.sec4media {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+}
+
+.sec4part2 {
+    border-radius: 10%;
+    border: solid 5px #76c7c0;
+    background-color: white;
+    width: 40%;
+
+}
+
+.section5 {
+ 
+  display: flex;
+  justify-content: center;
+   
+}
+
+.section5 h4 {
+    font-size: 20px;
+   color: gray;
+   font-style: italic;
+}
+.section5 img{
+    width: 350px;
+
+}
+
+.btninform {
+    color: white;
+    background-color: #a00;
+    padding: 5px 15px 5px 15px;
+    border: none;
+    font-size: 13px;
+}
+.section5 a{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+
+
+.btninform2 {
+    color: #666666;
+    background-color: white;
+    padding: 5px 15px 5px 15px;
+    border: none;
+    font-size: 13px;
+}
+
+.dusramamla a {
+    color: #666666;
+}
+
+.btninform3 {
+    color: white;
+    background-color: #4267b2;
+    padding: 5px 15px 5px 15px;
+    border: solid 1px black;
+    font-size: 15px;
+}
+
+.dropdown-menu {
+    height: 200px;
+    overflow: scroll;
+}
+
+.form {
+    overflow: scroll;
+    display: none;
+}
+
+.hidesec {
+    display: none;
+}
+.section6 .container{
+    display: flex;
+    justify-content: space-around;
+}
+.section6 .fluid-container{
+    display: flex;
+    justify-content: center;
+}
+.section6 .container div{
+    width: 40% ;
+}
+.SecondContainer{
+    border-radius: 10px;
+    width: 60%;
+    background-color: rgb(245, 245, 245);
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.mamla .container{
+    width: 30%;
+
+}
+
+
+@media (max-width: 756px) {
+    .row .panel {
+        height: auto;
+    }
+
+    .section2 .sec2partition {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+
+    }
+
+    .sec2partitiondiv {
+        width: 100%;
+
+
+    }
+
+    .sec2partitiondiv2 {
+        display: none;
+    }
+
+    .sec2partitiondiv3 {
+        display: none;
+    }
+
+    .section4 {
+        height: 200vh;
+    }
+
+    .sec4media {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 180vh;
+        width: 90%;
+
+    }
+
+    .sec4part {
+        width: 100%;
+
+    }
+
+    .sec4part2 {
+        width: 100%;
+
+    }
+
+    .card3 {
+        display: none;
+    }
+
+    .para {
+        position: absolute;
+        top: 250%;
+        right: 20%;
+        display: none;
+    }
+
+    .para p {
+        font-size: 15px;
+    }
+
+    .para2 {
+        position: absolute;
+        top: 325%;
+        right: 20%;
+        display: none;
+
+    }
+
+    .part2para {
+        display: none;
+    }
+
+   
+    .section6 .container{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+  
+    .section6 .container div{
+        width: 100%;
+    }
+    .section6 .container div{
+        width: 100% ;
+    }
+    .footer{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .TextOnFooter{
+        width: 100%;
+    }
+    .mamla .container{
+        width: 100%;
+        
+    }
+    #signbtn{
+        margin-top: 5px;
+    }
+
+
+}

@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.ahref a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    color: gray;
+    transition: 0.3s ease;
+}
+
+.ahref a:hover {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    color: white;
+    background-color: #528B86;
+
+}
+
+.angertag a:hover {
+    color: rgb(215, 2, 2);
+}
+
+.religiousahref a {
+    text-decoration: none;
+    color: #60c7bd;
+    transition: 0.3s ease;
+}
+
+.religiousahref div {
+    border-bottom: solid 1px #a197977a;
+    padding: 5px;
+}
+
+.religiousahref a:hover {
+    text-decoration: none;
+    color: #666666;
+}
+
+.everybottom a {
+    color: #666666;
+    font-size: 13px;
+    transition: 0.3s ease;
+
+}
+
+.everybottom a:hover {
+    color: red;
+    font-size: 13px;
+
+}
+
+.more {
+    width: 40%;
+}
+
+.privacy {
+    width: 25%;
+}
+
+.company {
+    width: 25%;
+}
+
+.need {
+    width: 30%;
+
+}
+
+
+#btn{
+    display: none;
+}
+.part{
+    
+    position: relative;
+    animation-name: example;
+    animation-duration: 1s;
+  }
+  
+  @keyframes example {
+    0%   { right:400px; top:0px;}
+    
+    100%  { right:0px; top:0px;}
+  }
+
+.part2{
+    
+    position: relative;
+    animation-name: example2;
+    animation-duration: 1s;
+  }
+  
+  @keyframes example2 {
+    0%   { left:200px; top:0px;}
+    
+    100%  { left:0px; top:0px;}
+  }
+  
+@media (max-width: 986px) {
+    .religious {
+        flex-direction: column;
+
+    }
+
+
+
+.part2 {
+    
+    position: relative;
+    animation-name: example;
+    animation-duration: 3s;
+  }
+  
+  @keyframes example {
+    0%   { left:200px; top:0px;}
+    
+    100%  { left:0px; top:0px;}
+  }
+  
+@media (max-width: 986px) {
+    .religious {
+        flex-direction: column;
+
+    }
+
+    .religious div {
+
+        padding: 10px;
+    }
+
+    .everybottom {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .more {
+        width: 100%;
+        text-align: center;
+    }
+
+    .privacy {
+        width: 100%;
+        text-align: center;
+    }
+
+    .company {
+        width: 100%;
+        text-align: center;
+    }
+
+    .need {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    
+
+    .offcanvas-body div a {
+        color: white;
+        padding: 20px;
+    }
+
+    .offcanvas-body div {
+        padding: 20px;
+        border-bottom: solid 1px #666666;
+
+    }
+    #btn{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .block{
+        display: none;
+    }
+}
+
+}

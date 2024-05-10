@@ -1,0 +1,373 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.MainContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Container--div{
+    width: 60%;
+}
+.ForcenTer{
+    text-align: center;
+  
+}
+.ahref a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    color: gray;
+    transition: 0.3s ease;
+}
+.ahref a:hover{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    color: white;
+    background-color: #528B86 ;
+
+}
+.angertag a:hover{
+    color: rgb(215, 2, 2);
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+ 
+}
+.mamla{
+    display: none;
+}
+.ahreftags a {
+    text-decoration: none;
+
+}
+
+.card {
+    margin: 20px;
+    padding: 10px;
+    height: 150px;
+    width: 350px !important;
+
+}
+
+.readmore {
+    width: 200px ! important;
+    color: #337ab7;
+    background-color: #76c7c0;
+    transition: 0.5s ease;
+    text-shadow: black 15px,15px ;
+
+}
+.panel{
+    background-image: url(../../Bootstrap/images/mainimg_shadi.com);
+    background-size: cover;
+}
+.card:hover .readmore {
+    background-color: rgb(136, 163, 155);
+    color: 337ab7;
+
+}
+
+.cursel a:hover {
+    color: red;
+}
+.href{
+    color: black;
+}
+.section2 img{
+    width: 300px;
+}
+.section2 p{
+    font-size: 15px;
+}
+.sec2partitiondiv{
+    width: 25%;
+}
+.sec2partitiondiv2{
+    width: 25%;
+}
+.sec2partitiondiv3{
+    width: 25%;
+}
+.section4{
+  
+    background-image:url(../../Bootstrap/images/sec3shadi.com) ;
+    background-size: cover;
+    height: 100vh;
+}
+.section4 h3 {
+    font-size: 30px;
+    font-weight: bolder;
+} 
+
+.sec4part{
+    border-radius: 10%;
+    border: solid 5px #76c7c0;
+    background-color: white;
+    width: 30%;
+}
+
+.section4 .imgbck{
+    width: 100%;
+    height: 200px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.section4 img{
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    width: 100%;
+}
+.sec4partbtn .button{
+    background-color: white;
+    color: black;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.para{
+    position: absolute;
+    top: 240%;
+    right: 340px;
+}
+.para p {
+    font-size: 15px;
+}
+.para2{
+    position: absolute;
+    top: 240%;
+    right: 55%;
+    
+}
+.para2 p{
+    font-size: 15px;
+    
+}
+
+.section5 .imgpart{
+    width: 25%;
+    height: 100px;
+}
+.section5 img{
+    width: 100%;
+    border-radius: 10px;
+}
+.section5 .imagediv{
+    border: solid 1px #337ab7;
+    width: 100%;
+   
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.imagediv:hover{
+    border: solid 1px red;
+    width: 100%;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.imgpart a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 15px;
+}
+.part2para p{
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+    position: absolute;
+    top: 335%;
+    right: 40%;
+}
+ a:hover{
+    color: red;
+}
+.containerpara{
+    position: relative;
+    top: 70px;
+    display: block;
+}
+.lastdivhref a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #666666;
+    transition: 0.5s ease;
+
+}
+.lastdivhref a:hover{
+    text-decoration: none;
+    font-size: 13px;
+    color: #be0505;
+    transition: 0.5s ease;
+
+}
+.seconddiv  {
+  width: 35%;
+}
+.sec4media{
+    display: flex;
+    justify-content: center;
+}
+.sec4part2{
+    border-radius: 10%;
+    border: solid 5px #76c7c0;
+    background-color: white;
+    width: 30%;
+
+}
+.section5{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+ .section5 .container{
+    display: flex;
+    justify-content: space-around;
+}
+.btninform{
+    color: white;
+    background-color: #a00;
+    padding: 5px 15px 5px 15px;
+    border: none;
+    font-size: 13px;
+}
+
+.btninform2{
+    color: #666666;
+    background-color: white;
+    padding: 5px 15px 5px 15px;
+    border: none;
+    font-size: 13px;
+}
+.dusramamla a{
+    color: #666666;
+}
+.btninform3{
+    color: white;
+    background-color: #4267b2;
+    padding: 5px 15px 5px 15px;
+    border: solid 1px black;
+    font-size: 15px;
+}
+.dropdown-menu{
+    height: 200px;
+    overflow: scroll;
+}
+.form{
+    overflow: scroll;
+    display: none;
+}
+.formtop{
+
+}
+.hidesec{
+    display: none;
+}
+.btnOffcanvas{
+    width: 50px;
+    position: fixed;
+    left: 90%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: none;
+}
+
+@media (max-width: 576px) {
+.row .panel{
+        height: auto;
+    }
+.section2 .sec2partition{
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    
+}
+.sec2partitiondiv{
+    width: 100%;
+    
+    
+}
+.sec2partitiondiv2{
+    display: none;
+}
+.sec2partitiondiv3{
+    display: none;
+}
+.section4{
+    height: auto;
+}
+
+.sec4media{
+    flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   height: auto;
+}
+.sec4part {
+    width: 99% ;
+    margin-left: 20px;
+}
+.sec4part2{
+    width: 99%;
+    margin-right: 20px;
+}
+.card3{
+    display: none;
+}
+.para{
+    position: absolute;
+    top:250%;
+    right: 15%;
+}
+.para p {
+    font-size: 15px;
+}
+.para2{
+    position: absolute;
+    top: 345%;
+    right: 15%;
+    
+}
+
+}
+
+@media (max-width: 1000px){
+.ahref div a{
+    display: none;
+}
+.off--Body a{
+    text-decoration: none;
+    color: white;
+
+}
+.off--Body li{
+    padding: 10px;
+    border-top: solid 1px gray;
+    border-bottom: solid 1px gray;
+}
+.btnOffcanvas{
+    display: block;
+}
+.containerpara{
+    display: none;
+}
+
+}

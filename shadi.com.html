@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Shadi</title>
+    <link rel="shortcut icon" type="x-icon" href="../../Bootstrap/images/s.png">
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="shadi.com.css">
+
+</head>
+
+<body>
+    <header>
+        <style>
+            html,
+            body {
+                padding: 0px;
+                margin: 0px;
+                width: 100%;
+                height: auto;
+                overflow-x: hidden;
+                box-sizing: border-box;
+            }
+        </style>
+    </header>
+    <main class="">
+        <div class="row">
+            <div class="fluid-container panel col-sm-12  " style="height: 100vh; ">
+                <div class="">
+                    <div class=" d-flex justify-content-end " style="width: 90%;">
+                        <button class="btn btn-secondary me-3 mt-3" style="" id="login" onclick="login()">Login</button>
+                        <button class="btn   mt-3" id="join" style="background-color: #368D87; color: white;"
+                            onclick="joinbtn()">Join Now</button>
+                    </div>
+                    <div>
+
+                    </div>
+                    <div class="container mamla  " id="closebtn">
+
+                        <div class="container p-2   text-end"
+                            style=" background-color: #6D5E63; border: #6D5E63;">
+                            <div class="offset-11">
+                                <button
+                                    style="margin-left: 20px; font-size: 25px; font-style: bolder; border: none; background-color: transparent; color: white;"
+                                    onclick="closebtn()" id="disable">X</button>
+                            </div>
+                            <div>
+                                <input placeholder="Email Address " class="p-1 w-100 my-1" type="text" style="">
+                                <input placeholder="Password" class="p-1 w-100 my-1" type="password">
+                            </div>
+
+                            <div class="d-flex justify-content-between">
+                                <div class="text-center">
+                                    <button class="btninform" style="background-color: #AA0000;">SIGN IN</button>
+                                    <br><a class="text-decoration-none text-white"
+                                        style="font-size: 13px ; font-style: bold;" href="">Forget Your password?</a>
+                                </div>
+                                <div class="p-1 dusramamla">
+                                    <div class="my-1 ">
+                                        <a class="my-1 text-decoration-none bg-light " style="padding: 10px;"
+                                            href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?redirect_uri=storagerelay%3A%2F%2Fhttps%2Fwww.shadi.com%3Fid%3Dauth343651&response_type=permission%20id_token&scope=email%20profile%20openid&openid.realm&include_granted_scopes=true&client_id=1000558056344-f0e3k0bnrvqh3fte3uisahhsq0ouacd9.apps.googleusercontent.com&ss_domain=https%3A%2F%2Fwww.shadi.com&fetch_basic_profile=true&gsiwebsdk=2&service=lso&o2v=1&theme=glif&flowName=GeneralOAuthFlow">
+                                            <img src="../../Bootstrap/images/google.png" alt="" width="20px">Sign In</a>
+
+                                    </div>
+                                    <div class="p-2  mt-2" style="background-color: #4267B2;">
+                                        <a class="my-1 text-white text-decoration-none  " style="padding: 10px;"
+                                            href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?redirect_uri=storagerelay%3A%2F%2Fhttps%2Fwww.shadi.com%3Fid%3Dauth343651&response_type=permission%20id_token&scope=email%20profile%20openid&openid.realm&include_granted_scopes=true&client_id=1000558056344-f0e3k0bnrvqh3fte3uisahhsq0ouacd9.apps.googleusercontent.com&ss_domain=https%3A%2F%2Fwww.shadi.com&fetch_basic_profile=true&gsiwebsdk=2&service=lso&o2v=1&theme=glif&flowName=GeneralOAuthFlow">
+                                            <i class="fa-brands fa-facebook-f"></i> Sign In</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container border bg-light form  " id="form"
+                        style="width: 50%; border-radius: 5px; height: 500px;">
+                        <div class="formtop ">
+                            <button class=" mt-2 me-5"
+                                style=" padding: 10px; width: 40px; font-size: 25px;  font-style: bolder; border: none;background-color: white ; color: rgb(0, 0, 0);"
+                                onclick="closeformbtn()">X</button>
+
+                            <p class="text-center text-danger "
+                                style="font-size: 25px;text-decoration: underline; font-weight: bolder;">
+
+                                REGISTER NEW MEMBER</p>
+
+                        </div>
+                        <div class="d-flex justify-content-around">
+                            <input type="text" placeholder="First Name " class="form-control " style="width: 45%; ">
+                            <input type="text" placeholder="Last Name" class="form-control " style="width: 45%;">
+                        </div>
+                        <p class="ms-3 my-2" style="font-weight: bold;">Gender</p>
+                        <div>
+                            <button class="btn " id="female" onclick="femalebtn()">Female</button>
+                            <button class="btn " id="male" onclick="malebtn()">Male</button>
+                        </div>
+                        <p class="ms-3 my-2" style="font-weight: bold;">Looking for</p>
+                        <div>
+                            <button class="btn " id="female2" onclick="femalebtn()">Female</button>
+                            <button class="btn " id="male2" onclick="malebtn()">Male</button>
+                        </div>
+
+                        <div>
+                            <div class="btn-group border mt-2">
+                                <div class="dropdown">
+                                    <button type="button" class="btn btn-light dropdown-toggle"
+                                        data-bs-toggle="dropdown">
+                                        Month
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Jan</a></li>
+                                        <li><a class="dropdown-item" href="#">feb</a></li>
+                                        <li><a class="dropdown-item" href="#">Mar</a></li>
+                                        <li><a class="dropdown-item" href="#">Apr</a></li>
+                                        <li><a class="dropdown-item" href="#">May</a></li>
+                                        <li><a class="dropdown-item" href="#">Jun</a></li>
+                                        <li><a class="dropdown-item" href="#">JUl</a></li>
+                                        <li><a class="dropdown-item" href="#">Aug</a></li>
+                                        <li><a class="dropdown-item" href="#">Sep</a></li>
+                                        <li><a class="dropdown-item" href="#">Oct</a></li>
+                                        <li><a class="dropdown-item" href="#">Nov</a></li>
+                                        <li><a class="dropdown-item" href="#">Dec</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown">
+                                    <button type="button" class="btn btn-light dropdown-toggle"
+                                        data-bs-toggle="dropdown">
+                                        Day
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">01</a></li>
+                                        <li><a class="dropdown-item" href="#">02</a></li>
+                                        <li><a class="dropdown-item" href="#">03</a></li>
+                                        <li><a class="dropdown-item" href="#">04</a></li>
+                                        <li><a class="dropdown-item" href="#">05</a></li>
+                                        <li><a class="dropdown-item" href="#">06</a></li>
+                                        <li><a class="dropdown-item" href="#">07</a></li>
+                                        <li><a class="dropdown-item" href="#">08</a></li>
+                                        <li><a class="dropdown-item" href="#">09</a></li>
+                                        <li><a class="dropdown-item" href="#">10</a></li>
+                                        <li><a class="dropdown-item" href="#">11</a></li>
+                                        <li><a class="dropdown-item" href="#">12</a></li>
+                                        <li><a class="dropdown-item" href="#">13</a></li>
+                                        <li><a class="dropdown-item" href="#">14</a></li>
+                                        <li><a class="dropdown-item" href="#">15</a></li>
+                                        <li><a class="dropdown-item" href="#">16</a></li>
+                                        <li><a class="dropdown-item" href="#">17</a></li>
+                                        <li><a class="dropdown-item" href="#">18</a></li>
+                                        <li><a class="dropdown-item" href="#">19</a></li>
+                                        <li><a class="dropdown-item" href="#">20</a></li>
+                                        <li><a class="dropdown-item" href="#">21</a></li>
+                                        <li><a class="dropdown-item" href="#">22</a></li>
+                                        <li><a class="dropdown-item" href="#">23</a></li>
+                                        <li><a class="dropdown-item" href="#">24</a></li>
+                                        <li><a class="dropdown-item" href="#">25</a></li>
+                                        <li><a class="dropdown-item" href="#">26</a></li>
+                                        <li><a class="dropdown-item" href="#">27</a></li>
+                                        <li><a class="dropdown-item" href="#">28</a></li>
+                                        <li><a class="dropdown-item" href="#">29</a></li>
+                                        <li><a class="dropdown-item" href="#">30</a></li>
+                                        <li><a class="dropdown-item" href="#">31</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown ">
+                                    <button type="button" class="btn btn-light dropdown-toggle"
+                                        data-bs-toggle="dropdown">
+                                        Year
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Jan</a></li>
+                                        <li><a class="dropdown-item" href="#">feb</a></li>
+                                        <li><a class="dropdown-item" href="#">Mar</a></li>
+                                        <li><a class="dropdown-item" href="#">Apr</a></li>
+                                        <li><a class="dropdown-item" href="#">May</a></li>
+                                        <li><a class="dropdown-item" href="#">Jun</a></li>
+                                        <li><a class="dropdown-item" href="#">JUl</a></li>
+                                        <li><a class="dropdown-item" href="#">Aug</a></li>
+                                        <li><a class="dropdown-item" href="#">Sep</a></li>
+                                        <li><a class="dropdown-item" href="#">Oct</a></li>
+                                        <li><a class="dropdown-item" href="#">Nov</a></li>
+                                        <li><a class="dropdown-item" href="#">Dec</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown ">
+                            <button type="button"
+                                class=" shadow btn btn-light dropdown-toggle w-100 text-start border my-3"
+                                data-bs-toggle="dropdown">
+                                Religion
+                            </button>
+                            <ul class="dropdown-menu w-100">
+                                <li><a class="dropdown-item" href="#">Christianity</a></li>
+                                <li><a class="dropdown-item" href="#">Hindu</a></li>
+                                <li><a class="dropdown-item" href="#">Islam</a></li>
+                                <li><a class="dropdown-item" href="#">Sikh</a></li>
+                                <li><a class="dropdown-item" href="#">Nonreligions</a></li>
+                                <li><a class="dropdown-item" href="#">Bori</a></li>
+                                <li><a class="dropdown-item" href="#">Buddhisim</a></li>
+                                <li><a class="dropdown-item" href="#">Jain</a></li>
+                                <li><a class="dropdown-item" href="#">Islam-sunni</a></li>
+                                <li><a class="dropdown-item" href="#">Islam-Shia</a></li>
+                                <li><a class="dropdown-item" href="#">Hindu-kumri</a></li>
+                                <li><a class="dropdown-item" href="#">Hindu-Dhobi</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown ">
+                            <button type="button"
+                                class=" shadow btn btn-light dropdown-toggle w-100 text-start border my-3"
+                                data-bs-toggle="dropdown">
+                                Education
+                            </button>
+                            <ul class="dropdown-menu w-100">
+                                <li><a class="dropdown-item" href="#">Becholers</a></li>
+                                <li><a class="dropdown-item" href="#">High School</a></li>
+                                <li><a class="dropdown-item" href="#">Associates</a></li>
+                                <li><a class="dropdown-item" href="#">Technical School</a></li>
+                                <li><a class="dropdown-item" href="#">Masters</a></li>
+                                <li><a class="dropdown-item" href="#">MBBS</a></li>
+                                <li><a class="dropdown-item" href="#">JD</a></li>
+                                <li><a class="dropdown-item" href="#">MD</a></li>
+                                <li><a class="dropdown-item" href="#">PhD</a></li>
+                                <li><a class="dropdown-item" href="#">CA-ACCA</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown ">
+                            <button type="button"
+                                class=" shadow btn btn-light dropdown-toggle w-100 text-start border my-3"
+                                data-bs-toggle="dropdown">
+                                Country
+                            </button>
+                            <ul class="dropdown-menu w-100">
+                                <li><a class="dropdown-item" href="#">USA</a></li>
+                                <li><a class="dropdown-item" href="#">UK</a></li>
+                                <li><a class="dropdown-item" href="#">India</a></li>
+                                <li><a class="dropdown-item" href="#">Pakistan</a></li>
+                                <li><a class="dropdown-item" href="#">Canada</a></li>
+                                <li><a class="dropdown-item" href="#">Australia</a></li>
+                                <li><a class="dropdown-item" href="#">New Zealand</a></li>
+                                <li><a class="dropdown-item" href="#">UAE</a></li>
+                                <li><a class="dropdown-item" href="#">China</a></li>
+                                <li><a class="dropdown-item" href="#">Bangladesh</a></li>
+                            </ul>
+                        </div>
+                        <div class="mb-3">
+                            <div class="" id="bottomsec"><button class="btn btn-danger" onclick="signup()"
+                                    id="signupbtn">SIGN UP WITH EMAIL</button>
+
+                                <span id="signbtn" class="offset-4 "> <a
+                                        class="my-1 text-decoration-none  bg-light border shadow-lg"
+                                        style="padding: 10px; width: 150px;"
+                                        href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?redirect_uri=storagerelay%3A%2F%2Fhttps%2Fwww.shadi.com%3Fid%3Dauth343651&response_type=permission%20id_token&scope=email%20profile%20openid&openid.realm&include_granted_scopes=true&client_id=1000558056344-f0e3k0bnrvqh3fte3uisahhsq0ouacd9.apps.googleusercontent.com&ss_domain=https%3A%2F%2Fwww.shadi.com&fetch_basic_profile=true&gsiwebsdk=2&service=lso&o2v=1&theme=glif&flowName=GeneralOAuthFlow">
+                                        <img src="../../Bootstrap/images/google.png" alt="" width="20px">Sign In</a>
+
+                                    <a class="my-1 text-white text-decoration-none  "
+                                        style="padding: 10px; background-color: #4267B2; width: 100px;"
+                                        href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?redirect_uri=storagerelay%3A%2F%2Fhttps%2Fwww.shadi.com%3Fid%3Dauth343651&response_type=permission%20id_token&scope=email%20profile%20openid&openid.realm&include_granted_scopes=true&client_id=1000558056344-f0e3k0bnrvqh3fte3uisahhsq0ouacd9.apps.googleusercontent.com&ss_domain=https%3A%2F%2Fwww.shadi.com&fetch_basic_profile=true&gsiwebsdk=2&service=lso&o2v=1&theme=glif&flowName=GeneralOAuthFlow">
+                                        <i class="fa-brands fa-facebook-f"></i> Sign In</a></span>
+                                <div class="hidesec" id="hidesec">
+                                    <input type="text" placeholder="Email Address " class="form-control my-2" style=" ">
+                                    <input type="password" placeholder="Password " class="form-control my-2" style=" ">
+                                    <div id="">
+                                        <button class="btn-danger btn ">Submit</button>
+                                        <button class="btn-dark btn " id="cancel" onclick="cancel()">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        </div>
+        </div>
+        <div class="text-center ">
+
+
+            <a href="shadi.trademark.html" class="btn  btn-sm m-3" style="background-color: #ff716f; color: white;">
+                SHADI@ tradmark notice </a>
+        </div>
+        <div class="section2 d-flex justify-content-center row" style="height: 50vh; ">
+            <div class="d-flex sec2partition justify-content-around text-center " style="width: 80%;">
+                <div class=" text-center sec2partitiondiv " style="">
+                    <img src="../../Bootstrap/images/shdi.com1.png" alt="">
+
+                    <p>Millons of People register on shadi.com looking for
+                        someone special. This site for serious singles looking
+                        for a long lasting relationship.</p>
+
+                </div>
+                <div class="sec2partitiondiv2 text-center "><img src="../../Bootstrap/images/shadi.com2.png" alt="">
+                    <p>
+                        80% of our members are highly educated. Most of them
+                        are successful professionals in their selected fields.
+                    </p>
+                </div>
+                <div class="sec2partitiondiv3  ">
+                    <img src="../../Bootstrap/images/shadi.com3.png" alt="">
+                    <p>
+                        Shadi.com uses a smart matchmaking system. We
+                        present you matches based on current location.
+                        education level & lifestyle choice.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="section3 d-flex justify-content-center">
+            <div class="text-center text-danger">
+                <h3>BROWSE MATRIMONIAL</h3>
+                <h3>PROFILES</h3>
+
+
+                <div class="d-flex justify-content-center" style=" ">
+                    <div class="d-flex justify-content-around row cursel text-center  col-sm " style="">
+                        <div class=" card shadow col-sm-12">
+                            <div class="text-center inside">
+                                <a class=" href text-decoration-none fs-4" href="">RELIGION</a>
+                            </div>
+                            <div class="d-flex ahreftags justify-content-around col-sm">
+                                <div><a href="">Hindu </a></div>|
+                                <div><a href="Muslim_Matrimoniyal.html">Muslim </a></div>|
+                                <div><a href="">Christian </a></div>|
+                                <div><a href="">Shikh </a></div>|
+                                <div><a href="">Budhist </a></div>|
+                                <div><a href="">Jain </a></div>
+                            </div>
+                            <div class="text-center">
+                                <button id="readMore" class="btn readmore btn-sm ">READ MORE</button>
+                            </div>
+                        </div>
+                        <div class=" card shadow card3">
+                            <div class="text-center inside"><a class=" href text-decoration-none fs-4" href="">CASTE</a>
+                            </div>
+                            <div class="d-flex ahreftags justify-content-around col-sm">
+                                <div><a href="">Agarwal </a></div>|
+                                <div><a href="">Arora </a></div>|
+                                <div><a href="">Brahmin </a></div>|
+                                <div><a href="">Gupta </a></div>|
+                                <div><a href="">Khatri </a></div>|
+                                <div><a href="">lyer </a></div>|
+                            </div>
+                            <div class="d-flex ahreftags justify-content-around col-sm">
+                                <div><a href="">kayastha </a></div>|
+                                <div><a href="">Maratha </a></div>|
+                                <div><a href="">Rajput </a></div>|
+                                <div><a href="">Sunni </a></div>|
+                                <div><a href="">Swetambar </a></div>|
+
+                            </div>
+                            <div class="text-center">
+                                <button id="readMore" class="btn readmore btn-sm ">READ MORE</button>
+                            </div>
+                        </div>
+                        <div class=" card card3 shadow-lg">
+                            <div class="text-center inside"><a class=" href text-decoration-none fs-4"
+                                    href="">STATES</a>
+                            </div>
+                            <div class="d-flex ahreftags href justify-content-around col-sm">
+                                <div><a href="">California </a></div>|
+                                <div><a href="">New York </a></div>|
+                                <div><a href="">Texas </a></div>|
+                                <div><a href="">New Jersey </a></div>|
+                                <div><a href="">Virginia </a></div>|
+                            </div>
+                            <div class="d-flex ahreftags justify-content-around col-sm">
+                                <div><a href="">illnois </a></div>|
+                                <div><a href="">Florida </a></div>|
+                                <div><a href="">Pennsylvania </a></div>|
+                                <div><a href="">Michigan </a></div>|
+                                <div><a href="">Georgia</a></div>|
+
+                            </div>
+                            <div class="text-center">
+                                <button id="readMore" class="btn readmore btn-sm ">READ MORE</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section4">
+            <div class="text-center text-white mt-5 " style=" ">
+                <h3>PERSONALIZED MATCHMAKING FOR</h3>
+                <h3>BUSY PROFESSIONALS</h3>
+            </div>
+            <DIV class="container  sec4media " style="">
+                <div class="sec4part" style=" ">
+                    <img class=" " src="../../Bootstrap/images/shadi.com4.jpg" alt="">
+                    <div class="para2">
+                        <p class="text-white text-center">PRIME ASSIST MATCHMAKING FOR SINGLES
+                        </p>
+                        <p class="text-center text-white"> IN MODERN STYLE</p>
+                    </div>
+                    <div class="imgbck" style="background-color: black; ">
+                        <div class="">
+                            <p class="p-2 text-white text-center  " style="font-size: 15px;">This service is for those
+                                members who want personal matchmaking
+                                using whatsapp service. Prime Assist is best for people who want an Introduction service
+                                with no emails flooding their mailbox. No special app required.</p>
+                        </div>
+                        <div class="text-center sec4partbtn">
+                            <button class="button border-0 ">Read More ></button>
+                            <button class="button border-0 ">Join Now ></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec4part2 " style=" ">
+                    <img class=" " src="../../Bootstrap/images/shadi.com5.png" alt="">
+                    <div class="para">
+                        <p class="text-white text-center">PRIME ASSIST MATCHMAKING FOR SINGLES
+                        </p>
+                        <p class="text-center text-white"> IN CUSTOMIZED STYLE</p>
+                    </div>
+
+                    <div class="imgbck" style="background-color: black; ">
+                        <p class=" p-2 text-white text-center  " style="font-size: 15px;">
+                            Your customized membership at Prime Plus is a unique concept. We offer you a discreet
+                            personalized approach. We do the search for you and introduce you to selected potential
+                            matches. While you concentrate on your work!
+                        </p>
+                        <div class="text-center sec4partbtn">
+                            <button class="button border-0 ">Read More ></button>
+                            <button class="button border-0 ">Join Now ></button>
+                        </div>
+                    </div>
+                </div>
+
+            </DIV>
+        </div>
+        <section class="section5 mt-3 fluid-container " style="">
+           
+                <div class="  container row " >
+                    <div class="box col-sm-4 col-md-4 ">
+                        <h4 class="text-center">Relationship
+                        </h4>
+                        <h4 class="text-center">Advise</h4>
+    
+                        <div class="">
+                            <div class="  mb-2">
+                                <img src="../../Bootstrap/images/shadi.com6.jpg" alt="" width="">
+                            </div>
+                            <p class="" style="font-size: 14px;">Here we have experts who work hard to write blogs on
+                                relationships, marriage, dating and finding love, giving you vista and motivation to
+                                have a great love life. Following these tips and advice can help you in your
+                                relationship journey. Nowadays, people find their love by socializing, traveling or
+                                using a dating app / website.
+    
+                            </p>
+                            <div class="text-end "><a href="">read more</a></div>
+                        </div>
+                    </div>
+                    <div class="box  col-sm-4 col-md-4">
+    
+                        <h4 class="text-center">Find Someone
+                            Special Near</h4>
+                        <h4 class="text-center">You</h4>
+    
+                        <div>
+                            <div class=" mb-3 border-0">
+    
+                                <img src="../../Bootstrap/images/shadi.com7.png" alt="" width="" height="210px">
+                                <div class="part2para">
+                                    <p class=" text-white fs-5 "> Welcome To Best Matrimony</p>
+                                    <p class="m-4 text-white fs-5">Anaheim, California, USA</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p style="font-size: 14px ;">
+                                    Connect with your soul mate that can be nearby or within your city. Our members are
+                                    committed to looking for long-term healthy relationships. This platform will help
+                                    you to find love and give you a taste of meaningful connection.
+    
+                                </p>
+                                <div class="text-end "><a href="">read more</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box col-sm-4 col-md-4">
+                        <h4 class="text-center mb-5">Let A
+                            Matchmaker Help You</h4>
+                        <div>
+                            <div class=" card-body border-0  ">
+                                <img src="../../Bootstrap/images/shadi.com8.png" alt="" width="">
+                            </div>
+                            <div class="mt-3 card-content">
+                                <p class="" style="font-size: 14px;">If you are a busy professional then it's time to think
+                                    about a matchmaker who can help you.
+                                    <br> There are various reasons to take help from a matchmaker.
+    
+                                </p>
+                                <li style="font-size: 14px;">Discrete and private</li>
+                                <li style="font-size: 14px;">Save times, Safety</li>
+                                <li style="font-size: 14px;">Personalized service</li>
+                                <li style="font-size: 14px;">Dedicated matchmaker</li>
+                                <li style="font-size: 14px;">Meet commitment-minded singles</li>
+                            </div>
+                            <div class="text-end "><a href="">read more</a></div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="section6">
+            <div class="text-center">
+                <h3 class="text-danger">MEET OUR MEMBERS- SUCCESS</h3>
+                <h3 class="text-danger">PROFESSIONALS SINGLES</h3>
+            </div>
+            <div class="fluid-container ">
+                <div class="container " style="">
+                    <div class=" text-center" style="">
+                        <img src="../../Bootstrap/images/people-icons-v3.png" alt="" width="300px">
+                        <p class="" style="font-size: 13px;">We have members from all religions and ages. Our most
+                            popular age group is from 27 - 60. Almost all our singles are successful professionals and
+                            businessmen. Creating a great profile is essential in online matchmaking and adding your
+                            best photo to your profile. We offer abundant tips and relationship advice through our
+                            blogs. It is our passion to help you in the best possible way.
+
+                        </p>
+                    </div>
+                    <div class=" text-center" style="">
+                        <img src="../../Bootstrap/images/shield-icon-v3.png" alt="" width="300px">
+                        <p class="" style="font-size: 13px;">
+                            Shadi.com is an international matchmaking platform. Through which people can find love and
+                            long lasting relationships. Our profiles are verified with cell phone and email
+                            verification. We make use of the latest technology for fraud detention and SSL encryption.
+                            Non-active users are removed from our network. We are committed to providing a safe web
+                            service for like-minded singles in your region.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <h3 class="text-danger">SUCCESS STORIES</h3>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="SecondContainer shadow border p-3">
+                    <div>
+                    <p style="font-size: 13px;" id="">
+                        I met my fiance on Shadi.com. At first it seemed like a daunting task. But three months later. I
+                        came across a profile based in Toronto. Messaged her first and right from the start we both had
+                        positive feelings. I felt so much at ease in communicating with her. We had similar values and
+                        commonality in interests. We are planning to get married soon. With our parents blessing.
+    
+                    </p> 
+                    </div>
+                    
+                     <div>
+                        <p style="font-size: 13px;">Thank you Shadi.com</p> 
+                        <p style="font-size: 13px; font-weight: bold;">Aman- Toranto</p>
+                       
+                     </div>
+                    
+                </div>
+    
+            </div>
+        </section>
+
+        <section class="m-5" style="background-color: rgb(245, 245, 245);">
+            <div class="text-center m-2">
+                <h3 class="text-danger">SHADI.COM BEST ONLINE</h3>
+                <h3 class="text-danger">MATRIMONY SITE</h3>
+            </div>
+            <div class="d-flex justify-content-center ">
+                <DIV class="d-flex justify-content-center border-bottom  " style="width: 70%;">
+                    <p style="font-size: 13px; font-weight: bold; color: #666666;">
+                        <img src="../../Bootstrap/images/shadi_short.png" alt="" width="50px"> We have been making
+                        memorable memories through matchmaking for more than 20 years. It all began with creating many
+                        successful marriages for family and friends in upstate New York. To take the essence of
+                        matchmaking to the next level Shadi.com was created. Most important component of our network is
+                        that users find their match through our platform. We are proud to mention that millions of users
+                        have been impacted with our online marriage portal with happy endings. Our commitment lies in
+                        helping members meet someone special for long lasting relationship. Today, Shadi.com is known
+                        worldwide as one of the top introductions and matrimonial services provider. We are happy to
+                        welcome you to our matchmaking network and wish you success every step of the way.
+                    </p>
+
+                </DIV>
+
+            </div>
+            <div class="container  " style="width: 73%; ">
+                <div class="footer row">
+                    <div class="TextOnFooter col-sm-2 col-lg-4" style="">
+                        <p class="text-danger containerpara" style=" font-weight: bolder; font-size: 50px;  ">____</p>
+                        <p class="" style="font-weight: bold; color: #666666; ">ABOUT SHADI®
+
+                        </p>
+                        <P class="mt-4" style="font-size: 13px;">
+                            Shadi®.com is a <a class="text-decoration-none" href="">registered</a>
+                            and
+                            <a class="text-decoration-none" href="">trademarked </a>corporation based in the USA. We are
+                            a leading international matchmaking company for singles globally. Through our network we
+                            want to make the process of relationship journey relatively effortless. All profiles are
+                            checked manually with phone verification to ensure a safe environment for the users.
+
+                        </P>
+                    </div>
+                    <div class="TextOnFooter col-sm-2 col-lg-2" style="">
+                        <p class="text-danger containerpara mb-4" style=" font-weight: bolder; font-size: 50px;  ">__
+                        </p>
+                        <p class="" style="font-weight: bold; color: #666666; ">NEED HELP?
+
+                        </p>
+                        <div class="lastdivhref ">
+                            <div class="mt-3 mb-3"><a class="" href=""> > Member Login</a></div>
+                            <div class="mt-3 mb-3"><a href=""> > Shadi® 101</a></div>
+                            <div class="mt-3 mb-3"><a href=""> > Sign Up</a></div>
+                            <div class="mt-3 mb-3"><a href=""> > Member Support</a></div>
+
+                        </div>
+                    </div>
+                    <div class="TextOnFooter col-sm-2 col-lg-2" style="">
+                        <p class="text-danger containerpara mb-4" style=" font-weight: bolder; font-size: 50px;  ">__
+                        </p>
+                        <p class="" style="font-weight: bold; color: #666666; ">COMPANY
+
+                        </p>
+                        <div class="lastdivhref">
+                            <div class="mt-3 mb-3"><a class="" href=""> > About</a></div>
+                            <div class="mt-3 mb-3"><a href=""> > Blog</a></div>
+                            <div class="mt-3 mb-3"><a href=""> > Helpful Tips</a></div>
+                            <div class="mt-3 mb-3"><a href=""> > Submit story</a></div>
+
+                        </div>
+                    </div>
+                    <div class="TextOnFooter col-sm-2 col-lg-2" style="">
+                        <p class="text-danger containerpara mb-4" style=" font-weight: bolder; font-size: 50px;  ">__
+                        </p>
+                        <p class="" style="font-weight: bold; color: #666666; ">PRIVACY & MORE
+                        </p>
+                        <div class="lastdivhref">
+                            <div class="mt-3 mb-3"><a class="" href=""> > Terms of Use</a></div>
+                            <div class="mt-3 mb-3"><a href=""> > Privacy Policy</a></div>
+                            <div class="mt-3 mb-3"><a href=""> > Contract Us</a></div>
+
+                        </div>
+                    </div>
+
+                    <div class="TextOnFooter col-sm-2 col-lg-2" style="">
+                        <p class="text-danger containerpara mb-4" style=" font-weight: bolder; font-size: 50px;  ">__
+                        </p>
+                        <p class="" style="font-weight: bold; color: #666666; ">MORE
+                        </p>
+                        <div class="lastdivhref">
+                            <div class="mt-3 mb-3"><a class="" href=""> > Top Ranking Cities</a></div>
+                            <div class="mt-3 mb-3"><a href=""> > Parent Involved</a></div>
+                            <div class="mt-3 mb-3"><a href=""> > Intimate Cozy Wedding</a></div>
+                            <div class="mt-3 mb-3"><a href=""> > Site Map</a></div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="section7">
+            <div class="fluid-container p-4" style="background-color: #AA0000;">
+                <div class="container d-flex justify-content-between">
+                    <div class="w-25 ">
+                        <h4 class="text-white  text-center ">Follow us on:</h4>
+                        <div class="d-flex justify-content-center ">
+                            <div class="text-white me-2" style="font-size: 40px;"><i class="fa-brands fa-facebook"></i>
+                            </div>
+                            <div class="text-white me-2 " style="font-size: 40px;"><i
+                                    class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div class="text-white " style="font-size: 40px;"><i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seconddiv  text-end">
+                        <p class="text-white" style="font-size: 13px;"> SHADI® is a
+                            <a class="text-decoration-none" href="">registered trademark </a>
+                            and should not be used without permission
+                            © Copyrights Shadi.com 1997 - 2024. All rights reserved.
+                        </p>
+                        <div><img src="../../Bootstrap/images/trademark-logo-white.png" alt=""></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+<script src="shadi.js"></script>
+
+</html>
